@@ -1,0 +1,5 @@
+#! /bin/bash
+# CONNECT TO DB
+PSQL="psql --username=freecodecamp --dbname=salon -c"
+# MAIN MENU - LIST SERVICES
+MAIN_MENU=($PSQL "SELECT name FROM services")
